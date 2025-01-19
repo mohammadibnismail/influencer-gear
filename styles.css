@@ -113,18 +113,84 @@ main {
 }
 
 /* Brands logos Section styles Start */
-
-
-
-/* Brands logos Section styles End */
-/* Main Styles End */
 .brands-logos-container {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
     align-items: center;
+    margin-bottom: 100px;
 }
+
+/* Brands logos Section styles End */
+
+/* Product Section styles Start */
+.products {
+    padding: 0rem 75px;
+}
+
+.products-container-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    margin-bottom: 30px;
+}
+
+.products-container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.products-container-item {
+    border-radius: 5px;
+    padding: 17px 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.products-item-name {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(24, 25, 31);
+}
+
+.products-item-price {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.products-item-description-1 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(120, 120, 133);
+}
+
+.products-item-description-2 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(120, 120, 133);
+}
+
+.products-container-items-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 50px;
+}
+
+
+/* Product Section styles End */
+
+/* Main Styles End */
+
 
 
 /* Responsive Styles Start */
@@ -168,13 +234,19 @@ main {
     main {
         padding: 0rem 2rem;
     }
+
     /* Brands Logos Styles Start */
     .brands-logos-container {
         grid-template-columns: repeat(4, 1fr);
     }
-    /* Brands Logos Styles End */
 
-    
+    /* Brands Logos Styles End */
+    /* Products Styles Start */
+    .products-container-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 }
 
 /* Responsive Styles End */
