@@ -19,7 +19,7 @@
 /* Shared Styles End */
 
 
-/* Nav bar  Styles */
+/* Nav bar  Styles  Start */
 body {
     max-width: 1440px;
     width: auto;
@@ -27,10 +27,11 @@ body {
 }
 
 header {
-    padding: 80px 120px 50px;
+    padding: 0rem 7.5rem;
 }
 
-.nav-bar {
+.nav-bar-container {
+    padding: 6.25rem 0rem 3.125rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -42,7 +43,7 @@ header {
 }
 
 .nav-menu-items {
-    gap: 35px;
+    gap: 2rem;
     list-style: none;
     font-size: 16px;
     font-weight: 600;
@@ -53,4 +54,86 @@ header {
     text-decoration: none;
 }
 
-/* Nav bar  Styles */
+/* Nav bar  Styles End */
+
+/* Banner Styles Start */
+
+.banner-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.banner-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+    text-align: left;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    text-align: left;
+    padding: 15px 0px;
+
+}
+
+.banner-images {
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/Circle\ design.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prebook-btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 40px;
+    background: rgb(224, 44, 109);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Banner Styles End */
+
+
+
+
+
+/* Responsive Styles Start */
+@media screen and (max-width: 575px) {
+
+    /* Nav bar  Styles  Start */
+    header {
+        /* padding: 0px 10px; */
+        /* justify-content: left; */
+    }
+
+    .nav-bar-container {
+        justify-content: left;
+        flex-direction: column;
+        padding: 50px 0px 50px;
+    }
+
+    .nav-menu-items {
+        /* flex-direction: column; */
+        padding: 50px 0px 50px;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        padding: 25px 0px 25px;
+        margin: 0px 25px;
+    
+    }
+}
+/* Responsive Styles End */
