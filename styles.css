@@ -19,7 +19,7 @@
 /* Shared Styles End */
 
 
-/* Nav bar  Styles  Start */
+/* Nav bar Styles Start */
 body {
     max-width: 1440px;
     width: auto;
@@ -54,7 +54,7 @@ header {
     text-decoration: none;
 }
 
-/* Nav bar  Styles End */
+/* Nav bar Styles End */
 
 /* Banner Styles Start */
 
@@ -86,7 +86,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(./images/Circle\ design.svg) ;
+    background-image: url(./images/Circle\ design.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -107,16 +107,32 @@ header {
 /* Banner Styles End */
 
 
+/* Main Styles Start */
+main {
+    padding: 0rem 7.5rem;
+}
 
+/* Brands logos Section styles Start */
+
+
+
+/* Brands logos Section styles End */
+/* Main Styles End */
+.brands-logos-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
 
 
 /* Responsive Styles Start */
 @media screen and (max-width: 575px) {
 
-    /* Nav bar  Styles  Start */
+    /* Header Styles Start */
     header {
-        /* padding: 0px 10px; */
-        /* justify-content: left; */
+        padding: 0rem 2rem;
     }
 
     .nav-bar-container {
@@ -126,14 +142,39 @@ header {
     }
 
     .nav-menu-items {
-        /* flex-direction: column; */
         padding: 50px 0px 50px;
     }
+
     .banner-container {
         flex-direction: column-reverse;
-        padding: 25px 0px 25px;
+        padding: 10px 0px 10px;
         margin: 0px 25px;
-    
+        align-content: center;
     }
+
+    .banner-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Header Styles End */
+
+    /* Main Styles Start */
+    main {
+        padding: 0rem 2rem;
+    }
+    /* Brands Logos Styles Start */
+    .brands-logos-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* Brands Logos Styles End */
+
+    
 }
+
 /* Responsive Styles End */
